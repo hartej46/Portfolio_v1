@@ -3,7 +3,7 @@
 .About {
     background-color: #09090b;
     color: #eae7e7;
-    padding: 100px 0px;
+    padding: 60px 0px;
 }
 
 .Intro {
@@ -18,12 +18,12 @@
 }
 
 .me {
-    height: 24vw;
-    border: 5px solid #432a60 ;
+    height: 20vw;
+    border: 5px solid #432a60;
     border-radius: 12px;
-    box-shadow:  0 0 30px rgba(109, 65, 159, 0.35),
-                0 0 600px rgba(107, 64, 157, 0.25),
-                0 0 1200px rgba(69, 40, 102, 0.15);
+    box-shadow: 0 0 30px rgba(109, 65, 159, 0.35),
+        0 0 600px rgba(107, 64, 157, 0.25),
+        0 0 1200px rgba(69, 40, 102, 0.15);
     margin-top: 20px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -33,7 +33,7 @@
 }
 
 .written h1 {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 700;
     color: #9c5de4;
     text-shadow:
@@ -41,28 +41,28 @@
         0 0 8px rgba(156, 93, 228, 0.30),
         0 0 14px rgba(156, 93, 228, 0.18);
 }
-    
 
 
-.written > div {
+
+.written>div {
     height: 10px;
     width: 6vw;
     background-color: #9c5de4;
-    box-shadow:  0 0 20px rgba(156, 93, 228, 0.35),
-                 0 0 40px rgba(156, 93, 228, 0.25),
-                 0 0 60px rgba(156, 93, 228, 0.15);
-    margin: 15px  0 30px  0;
+    box-shadow: 0 0 20px rgba(156, 93, 228, 0.35),
+        0 0 40px rgba(156, 93, 228, 0.25),
+        0 0 60px rgba(156, 93, 228, 0.15);
+    margin: 15px 0 30px 0;
     border-radius: 4px;
 }
 
 .written h3 {
-    font-size: 44px;
+    font-size: 32px;
     font-weight: 600;
     margin: 5px 0px 20px 0px;
 }
 
 .written p {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .p1 {
@@ -73,12 +73,12 @@
 
 .p2 {
     margin-bottom: 15px;
-    color: #a9a8a8 ;
+    color: #a9a8a8;
 }
 
 
 .card {
-background-color: #161617;
+    background-color: #161617;
     border: 1px solid #353537;
     border-radius: 24px;
     max-width: 2400px;
@@ -90,15 +90,15 @@ background-color: #161617;
 
 .card:hover {
     transform: scale(1.03);
-    box-shadow:  0 0 20px rgba(172, 172, 172, 0.35),
-                 0 0 40px rgba(159, 159, 159, 0.25),
-                 0 0 60px rgba(173, 173, 173, 0.15);
+    box-shadow: 0 0 20px rgba(172, 172, 172, 0.35),
+        0 0 40px rgba(159, 159, 159, 0.25),
+        0 0 60px rgba(173, 173, 173, 0.15);
 }
 
 
 
 .card h2 {
-    font-size: 44px;
+    font-size: 28px;
     font-family: 'Exo', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     margin-bottom: 30px;
@@ -118,19 +118,19 @@ background-color: #161617;
     margin-bottom: 12px;
     color: #d1d1d1;
     line-height: 1.6;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .info {
     display: flex;
     justify-content: space-between;
-    font-size: 38px;
+    font-size: 24px;
     margin-bottom: 30px;
     font-weight: 500
-}   
+}
 
 .education-title {
-    font-size: 56px;
+    font-size: 38px;
     font-weight: 700;
     margin: 60px 0 30px 0;
     color: #eae7e7;
@@ -148,7 +148,7 @@ background-color: #161617;
 }
 
 .more-info h3 {
-    font-size: 32px;
+    font-size: 22px;
     color: #bab9b9;
     margin-bottom: 15px;
 }

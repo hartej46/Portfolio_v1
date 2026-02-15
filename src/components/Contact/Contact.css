@@ -3,7 +3,7 @@
 .Contact {
     background-color: #09090b;
     color: #eae7e7;
-    padding: 100px 2rem;
+    padding: 60px 2rem;
     font-family: 'Inter', sans-serif;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .written h1 {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 700;
     color: #9c5de4;
     text-shadow:
@@ -35,7 +35,7 @@
 }
 
 .written p.p1 {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.6;
     color: #eae7e7;
     max-width: 800px;
@@ -64,7 +64,7 @@
 }
 
 .card h2 {
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'Exo', sans-serif;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -170,7 +170,7 @@
 
 .info-content p:last-child {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: #eae7e7;
 }
 
@@ -186,7 +186,7 @@
 }
 
 .social-section h2 {
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'Exo', sans-serif;
     margin-bottom: 1.5rem;
     font-weight: 700;

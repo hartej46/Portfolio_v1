@@ -75,7 +75,7 @@
 }
 
 .description {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     color: #9ca3af;
     margin-bottom: 20px;
@@ -96,7 +96,7 @@
     color: #a78bfa;
     text-decoration: none;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 

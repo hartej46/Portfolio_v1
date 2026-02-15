@@ -1,6 +1,7 @@
 footer {
     background-color: black;
-    color: #eae7e7;;
+    color: #eae7e7;
+    ;
 }
 
 .footer {
@@ -8,15 +9,15 @@ footer {
 
 }
 
-.footer-me > h2 {
-    color: #9c5de4 ;
+.footer-me>h2 {
+    color: #9c5de4;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.footer-me > p {
-    font-size: 22px;
+.footer-me>p {
+    font-size: 16px;
 }
 
 .social a {
@@ -25,12 +26,12 @@ footer {
 }
 
 .Navigation h3 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 .Navigation li {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     margin: 10px;
 }
@@ -48,12 +49,12 @@ footer {
 .Navigation .nav-link.active {
     color: #9c5de4;
     text-decoration: underline;
-    text-underline-offset: 6px; 
+    text-underline-offset: 6px;
     text-decoration-thickness: 2px;
 }
 
 .contact h1 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     margin: 15px;
 }
@@ -62,7 +63,8 @@ footer {
     margin: 10px;
 }
 
-.phone , .email {
+.phone,
+.email {
     height: 25px;
     display: inline;
     margin-right: 15px;

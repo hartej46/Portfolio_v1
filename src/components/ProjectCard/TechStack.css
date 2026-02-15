@@ -1,0 +1,10 @@
+.tech-pill {
+    background-color: #2a2a2a;
+    color: #d1d5db;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid #444;
+    white-space: nowrap;
+}

@@ -1,0 +1,69 @@
+footer {
+    background-color: black;
+    color: #eae7e7;;
+}
+
+.footer {
+    padding: 40px 15vw;
+
+}
+
+.footer-me > h2 {
+    color: #9c5de4 ;
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.footer-me > p {
+    font-size: 22px;
+}
+
+.social a {
+    width: 40px;
+    margin: 30px;
+}
+
+.Navigation h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.Navigation li {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+
+
+.Navigation li::before {
+    content: "→";
+    position: relative;
+    left: 0;
+    color: #a855f7;
+    margin-right: 7px;
+}
+
+.Navigation .nav-link.active {
+    color: #9c5de4;
+    text-decoration: underline;
+    text-underline-offset: 6px; 
+    text-decoration-thickness: 2px;
+}
+
+.contact h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+.phone , .email {
+    height: 25px;
+    display: inline;
+    margin-right: 15px;
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+.About {
+    background-color: #09090b;
+    color: #eae7e7;
+    padding: 100px 0px;
+}
+
+.Intro {
+    display: flex;
+    gap: 0.5vw;
+    justify-content: space-around;
+    margin: 20px 5px 60px 5px;
+}
+
+.written {
+    width: 50vw;
+}
+
+.me {
+    height: 24vw;
+    border: 5px solid #432a60 ;
+    border-radius: 12px;
+    box-shadow:  0 0 30px rgba(109, 65, 159, 0.35),
+                0 0 600px rgba(107, 64, 157, 0.25),
+                0 0 1200px rgba(69, 40, 102, 0.15);
+    margin-top: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.me:hover {
+    transform: scale(1.11);
+}
+
+.written h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #9c5de4;
+    text-shadow:
+        0 0 4px rgba(156, 93, 228, 0.45),
+        0 0 8px rgba(156, 93, 228, 0.30),
+        0 0 14px rgba(156, 93, 228, 0.18);
+}
+    
+
+
+.written > div {
+    height: 10px;
+    width: 6vw;
+    background-color: #9c5de4;
+    box-shadow:  0 0 20px rgba(156, 93, 228, 0.35),
+                 0 0 40px rgba(156, 93, 228, 0.25),
+                 0 0 60px rgba(156, 93, 228, 0.15);
+    margin: 15px  0 30px  0;
+    border-radius: 4px;
+}
+
+.written h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 5px 0px 20px 0px;
+}
+
+.written p {
+    font-size: 24px;
+}
+
+.p1 {
+    line-height: 30px;
+    margin-bottom: 15px;
+
+}
+
+.p2 {
+    margin-bottom: 15px;
+    color: #a9a8a8 ;
+}
+
+
+.card {
+background-color: #161617;
+    border: 1px solid #353537;
+    border-radius: 24px;
+    max-width: 2400px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 16px 100px 16px 40px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow:  0 0 20px rgba(172, 172, 172, 0.35),
+                 0 0 40px rgba(159, 159, 159, 0.25),
+                 0 0 60px rgba(173, 173, 173, 0.15);
+}
+
+
+
+.card h2 {
+    font-size: 44px;
+    font-family: 'Exo', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card li::before {
+    content: "→";
+    position: relative;
+    left: 0;
+    color: #a855f7;
+    margin-right: 7px;
+}
+
+.card li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
+    color: #d1d1d1;
+    line-height: 1.6;
+    font-size: 24px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 38px;
+    margin-bottom: 30px;
+    font-weight: 500
+}   
+
+.education-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 60px 0 30px 0;
+    color: #eae7e7;
+}
+
+.many-card {
+    max-width: 2400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.info h1 {
+    color: #d9d7d7;
+}
+
+.more-info h3 {
+    font-size: 32px;
+    color: #bab9b9;
+    margin-bottom: 15px;
+}
+
+.more-info p {
+    font-size: 18px;
+    color: #8e8d8d;
+    margin-bottom: 15px;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:nth-child(2).visible {
+    transition-delay: 0.1s;
+}
+
+.card:nth-child(3).visible {
+    transition-delay: 0.2s;
+}

@@ -43,7 +43,7 @@ export default function Home() {
                     <h1 className="name">Hartejsingh Sandhu's <br /> <span>Portfolio</span></h1>
                     <div className="info flex gap-1.5">
                         <button> <a href="#">Download Resume</a> </button>
-                        <Link to="/contact">
+                        <Link to="/project">
     <button>Explore My Work</button>
 </Link>
                     </div>

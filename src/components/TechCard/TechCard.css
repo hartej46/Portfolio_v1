@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .card1 {
-    width: 360px;
-    height: 180px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    min-height: 160px;
+    padding: 1.5rem;
 
     background: rgba(25, 25, 30, 0.6);
     backdrop-filter: blur(10px);
@@ -19,13 +22,15 @@
 }
 
 .card1 img {
-    height: 100px;
-    margin-bottom: 16px;
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
 }
 
 .card1 p {
     margin: 0;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     color: #eaeaea;
@@ -35,4 +40,15 @@
     transform: translateY(-6px);
     border: 1px solid rgba(138, 43, 226, 0.5);
     box-shadow: 0 10px 25px rgba(138, 43, 226, 0.2);
+}
+
+@media (max-width: 640px) {
+    .card1 {
+        min-height: 140px;
+        padding: 1rem;
+    }
+
+    .card1 img {
+        height: 60px;
+    }
 }

@@ -11,11 +11,11 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <div className="footer flex justify-between gap-2.5">
+                <div className="footer">
                     <div className="footer-me">
                         <h2>Hartejsingh Sandhu</h2>
                         <p>Creating beautifully designed web experiences <br /> that engage and inspire.</p>
-                        <div className="social flex ">
+                        <div className="social">
                             <a href="https://www.github.com/hartej46" target="_blank" rel="noopener noreferrer"><img src={github} alt="github" className="social-img github" /></a>
                             <a href="#" className="social-img instagram"><img src={Instagram} alt="Instagram" /></a>
                             <a href="https://www.linkedin.com/in/hartej46" target="_blank" rel="noopener noreferrer"><img src={Linkedin} alt="Linkedin" className="social-img linkedin" /></a>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                     <div className="Navigation">
                         <h3>Navigation</h3>
-                        <ul className="mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <ul className="footer-nav">
                             <li>
                                 <NavLink
                                     to="/"
@@ -47,12 +47,11 @@ const Footer = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/github"
+                                    to="/project"
                                     className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-                                    Github
+                                    Projects
                                 </NavLink>
                             </li>
-
                         </ul>
                     </div>
                     <div className="contact">

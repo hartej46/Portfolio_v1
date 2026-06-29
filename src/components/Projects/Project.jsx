@@ -6,6 +6,7 @@ import Todolist from '../../ProjectScreenshot/TodoList_v2.png'
 import Quote from '../../ProjectScreenshot/Quote.png'
 import password from '../../ProjectScreenshot/passwordGenerator.png'
 import currency from '../../ProjectScreenshot/currency.png'
+import url_shorner from '../../ProjectScreenshot/url-shortner.png'
 import TechStack from "../ProjectCard/TechStack"
 
 export default function Project() {
@@ -62,6 +63,14 @@ export default function Project() {
             demolink: 'https://cultstory.vercel.app/',
             githublink: 'https://github.com/hartej46/CultStory',
             title: "CultStory"
+        }, 
+        {
+            image: url_shorner,
+            description: "This is a url shortner webite which helps you shorten you url using nanoid .",
+            teckstack: ['React','Node.js','Express.js','Redis','MongoDB', "mongoose",'nanoid','react-dom','axios'],
+            githublink: 'https://github.com/hartej46/urlShortner',
+            demolink: 'urlshortnerhartej.vercel.app',
+            title: 'url shortener'
         }
     ]
 

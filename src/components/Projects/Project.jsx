@@ -8,6 +8,8 @@ import password from '../../ProjectScreenshot/passwordGenerator.png'
 import currency from '../../ProjectScreenshot/currency.png'
 import url_shorner from '../../ProjectScreenshot/url-shortner.png'
 import TechStack from "../ProjectCard/TechStack"
+import mealmaster from '../../ProjectScreenshot/mealmaster.png'
+import nsthelper from '../../ProjectScreenshot/nsthelper.png'
 
 export default function Project() {
     const ProjectList = [
@@ -19,7 +21,14 @@ export default function Project() {
             githublink: 'https://github.com/hartej46/TodoList_v2',
             title: ' Todo List'
         },
-
+        {
+            image: mealmaster,
+            description: "This is project ui project, made using html , css and js",
+            teckstack: ['css','html','js'],
+            githublink: 'https://github.com/hartej46/Meal-Master-Recipe-Finder',
+            demolink: 'https://meal-master-recipe-finder.vercel.app/',
+            title:'Meal master'
+        },
         {
             image: Weather,
             description: 'A modern, responsive weather application built with React and Vite. It provides real-time weather updates and forecasts for any city using a weather API, featuring a clean UI with interactive search and loading animations.',
@@ -66,11 +75,19 @@ export default function Project() {
         }, 
         {
             image: url_shorner,
-            description: "This is a url shortner webite which helps you shorten you url using nanoid .",
+            description: "This project is a high-performance URL shortener that transforms long, complex links into clean, compact, and secure aliases using NanoID. It leverages a dual-database architecture—combining MongoDB for reliable storage with Redis Cloud for lightning-fast caching and instant redirects. Fully optimized for serverless environments like Vercel, the backend ensures low latency and robust connection resilience.",
             teckstack: ['React','Node.js','Express.js','Redis','MongoDB', "mongoose",'nanoid','react-dom','axios'],
             githublink: 'https://github.com/hartej46/urlShortner',
             demolink: 'urlshortnerhartej.vercel.app',
             title: 'url shortener'
+        },
+        {
+            image: nsthelper,
+            description: "This is my project for students of NST first year who want to complete their assignment and want to gain marks but didnt have time.",
+            teckstack: ['React','Node.js','Express.js','Redis','MongoDB', "mongoose",'nanoid','react-dom','axios'],
+            demolink: 'https://nsthelper.vercel.app/',
+            githublink: 'https://github.com/hartej46/nsthelper',
+            title: 'nst helper'
         }
     ]
 

@@ -12,6 +12,8 @@ import JS from '../../techImg/download.png'
 import PG from '../../techImg/elephant.png'
 import Neon from '../../techImg/77690634.png'
 import cpp from '../../techImg/ISO_C++_Logo.svg.png'
+import pytorch from '../../techImg/pytorch.png'
+import express from '../../techImg/express.png'
 
 export default function Home() {
     const handleClick = () => navigate('../Contacts/Contact.jsx')
@@ -24,7 +26,9 @@ export default function Home() {
         { img: JS, alternative: 'JS Logo', lang: "Javascript" },
         { img: PG, alternative: 'Postgress Logo', lang: "Postgress" },
         { img: Neon, alternative: 'Neon Logo', lang: "NeonDB" },
-        { img: cpp, alternative: 'C++ Logo', lang: "C++" }
+        { img: cpp, alternative: 'C++ Logo', lang: "C++" },
+        { img: pytorch, alternative: "pytorch logo", lang: 'pytorch'},
+        { img: express, alternative: "express.js", lang: 'Express.js'}
     ]
 
     return (

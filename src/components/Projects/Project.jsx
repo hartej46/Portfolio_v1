@@ -10,9 +10,34 @@ import url_shorner from '../../ProjectScreenshot/url-shortner.png'
 import TechStack from "../ProjectCard/TechStack"
 import mealmaster from '../../ProjectScreenshot/mealmaster.png'
 import nsthelper from '../../ProjectScreenshot/nsthelper.png'
+import resume from '../../ProjectScreenshot/resume.png'
 
 export default function Project() {
     const ProjectList = [
+        {
+            image: url_shorner,
+            description: "This project is a high-performance URL shortener that transforms long, complex links into clean, compact, and secure aliases using NanoID. It leverages a dual-database architecture—combining MongoDB for reliable storage with Redis Cloud for lightning-fast caching and instant redirects. Fully optimized for serverless environments like Vercel, the backend ensures low latency and robust connection resilience.",
+            teckstack: ['React','Node.js','Express.js','Redis','MongoDB', "mongoose",'nanoid','react-dom','axios'],
+            githublink: 'https://github.com/hartej46/urlShortner',
+            demolink: 'urlshortnerhartej.vercel.app',
+            title: 'url shortener'
+        },
+        {
+            image: nsthelper,
+            description: "This is my project for students of NST first year who want to complete their assignment and want to gain marks but didnt have time.",
+            teckstack: ['React','Node.js','Express.js','Redis','MongoDB', "mongoose",'nanoid','react-dom','axios'],
+            demolink: 'https://nsthelper.vercel.app/',
+            githublink: 'https://github.com/hartej46/nsthelper',
+            title: 'nst helper'
+        },
+        {
+            image: resume,
+            description: 'This is resume screening platform built using state of the art model. This help candidate screen their resume and also help recuriter find candidate and post job listing',
+            teckstack: ['react', 'clerk', 'python', 'express'],
+            demolink: 'https://resume-screening-platform.vercel.app/',
+            githublink: 'https://github.com/hartej46/resume-screening-platform',
+            title: 'resume screening'
+        },
         {
             image: Todolist,
             description: 'A robust Task Management application developed using React and the Context API. It allows users to create, edit, delete, and mark tasks as completed with a seamless interface. The application ensures data persistence across browser sessions by utilizing local storage.',
@@ -73,22 +98,6 @@ export default function Project() {
             githublink: 'https://github.com/hartej46/CultStory',
             title: "CultStory"
         }, 
-        {
-            image: url_shorner,
-            description: "This project is a high-performance URL shortener that transforms long, complex links into clean, compact, and secure aliases using NanoID. It leverages a dual-database architecture—combining MongoDB for reliable storage with Redis Cloud for lightning-fast caching and instant redirects. Fully optimized for serverless environments like Vercel, the backend ensures low latency and robust connection resilience.",
-            teckstack: ['React','Node.js','Express.js','Redis','MongoDB', "mongoose",'nanoid','react-dom','axios'],
-            githublink: 'https://github.com/hartej46/urlShortner',
-            demolink: 'urlshortnerhartej.vercel.app',
-            title: 'url shortener'
-        },
-        {
-            image: nsthelper,
-            description: "This is my project for students of NST first year who want to complete their assignment and want to gain marks but didnt have time.",
-            teckstack: ['React','Node.js','Express.js','Redis','MongoDB', "mongoose",'nanoid','react-dom','axios'],
-            demolink: 'https://nsthelper.vercel.app/',
-            githublink: 'https://github.com/hartej46/nsthelper',
-            title: 'nst helper'
-        }
     ]
 
     return (

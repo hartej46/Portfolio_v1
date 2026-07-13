@@ -19,7 +19,7 @@ export default function Project() {
             description: "This project is a high-performance URL shortener that transforms long, complex links into clean, compact, and secure aliases using NanoID. It leverages a dual-database architecture—combining MongoDB for reliable storage with Redis Cloud for lightning-fast caching and instant redirects. Fully optimized for serverless environments like Vercel, the backend ensures low latency and robust connection resilience.",
             teckstack: ['React','Node.js','Express.js','Redis','MongoDB', "mongoose",'nanoid','react-dom','axios'],
             githublink: 'https://github.com/hartej46/urlShortner',
-            demolink: 'urlshortnerhartej.vercel.app',
+            demolink: 'https://urlshortnerhartej.vercel.app',
             title: 'url shortener'
         },
         {

@@ -48,7 +48,7 @@ export default function Home() {
                     </div>
                     <h1 className="name">Hartejsingh Sandhu's <br /> <span>Portfolio</span></h1>
                     <div className="info flex gap-1.5">
-                        <button> <a href={resumePdf} download="Hartejsingh_Sandhu_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a> </button>
+                        <button> <a href={resumePdf} download="resume.pdf" target="_blank" rel="noreferrer">Download Resume</a> </button>
                         <Link to="/project">
     <button>Explore My Work</button>
 </Link>

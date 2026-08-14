@@ -15,6 +15,8 @@ import cpp from '../../techImg/ISO_C++_Logo.svg.png'
 import pytorch from '../../techImg/pytorch.png'
 import express from '../../techImg/express.png'
 
+import resumePdf from '../../resume/resume.pdf'
+
 export default function Home() {
     const handleClick = () => navigate('../Contacts/Contact.jsx')
     const techStack = [
@@ -46,7 +48,7 @@ export default function Home() {
                     </div>
                     <h1 className="name">Hartejsingh Sandhu's <br /> <span>Portfolio</span></h1>
                     <div className="info flex gap-1.5">
-                        <button> <a href="#">Download Resume</a> </button>
+                        <button> <a href={resumePdf} download="Hartejsingh_Sandhu_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a> </button>
                         <Link to="/project">
     <button>Explore My Work</button>
 </Link>

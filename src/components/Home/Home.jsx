@@ -14,6 +14,7 @@ import Neon from '../../techImg/77690634.png'
 import cpp from '../../techImg/ISO_C++_Logo.svg.png'
 import pytorch from '../../techImg/pytorch.png'
 import express from '../../techImg/express.png'
+import jest from "../../ProjectScreenshot/jest.png"
 
 import resumePdf from '../../resume/resume.pdf'
 
@@ -30,7 +31,8 @@ export default function Home() {
         { img: Neon, alternative: 'Neon Logo', lang: "NeonDB" },
         { img: cpp, alternative: 'C++ Logo', lang: "C++" },
         { img: pytorch, alternative: "pytorch logo", lang: 'pytorch'},
-        { img: express, alternative: "express.js", lang: 'Express.js'}
+        { img: express, alternative: "express.js", lang: 'Express.js'},
+        { img: jest, alternative: "jest", lang: 'Jest'}
     ]
 
     return (

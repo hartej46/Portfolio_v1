@@ -1,8 +1,68 @@
-import React from 'react'
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram, Copy } from 'lucide-react'
+import React, { useState } from 'react'
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram, Copy, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
 import './Contact.css'
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    })
+    const [status, setStatus] = useState({
+        loading: false,
+        success: null,
+        error: null
+    })
+
+    const handleChange = (e) => {
+        const { id, value } = e.target
+        setFormData(prev => ({
+            ...prev,
+            [id]: value
+        }))
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        if (!formData.name || !formData.email || !formData.message) {
+            setStatus({ loading: false, success: null, error: 'Please fill in all fields.' })
+            return
+        }
+
+        setStatus({ loading: true, success: null, error: null })
+
+        const apiUrl = import.meta.env.VITE_CONTACT_API_URL || 'http://localhost:5005/api/contact'
+
+        try {
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+
+            const data = await response.json()
+
+            if (response.ok && data.success !== false) {
+                setStatus({
+                    loading: false,
+                    success: data.message || 'Message sent successfully! I will get back to you soon.',
+                    error: null
+                })
+                setFormData({ name: '', email: '', message: '' })
+            } else {
+                throw new Error(data.error || data.message || 'Failed to send message. Please try again.')
+            }
+        } catch (err) {
+            setStatus({
+                loading: false,
+                success: null,
+                error: err.message || 'Network error. Please make sure the backend server is running.'
+            })
+        }
+    }
+
     return (
         <div className="Contact">
             <div className="contact-container">
@@ -18,21 +78,64 @@ export default function Contact() {
                 <div className="contact-grid">
                     <div className="card">
                         <h2>Send a Message</h2>
-                        <form className="contact-form">
+
+                        {status.success && (
+                            <div className="status-banner status-success">
+                                <CheckCircle size={20} />
+                                <span>{status.success}</span>
+                            </div>
+                        )}
+
+                        {status.error && (
+                            <div className="status-banner status-error">
+                                <AlertCircle size={20} />
+                                <span>{status.error}</span>
+                            </div>
+                        )}
+
+                        <form className="contact-form" onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="name">Your Name</label>
-                                <input type="text" id="name" placeholder="Name Here" />
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Name Here"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Your Email</label>
-                                <input type="email" id="email" placeholder="name@example.com" />
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="name@example.com"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Message</label>
-                                <textarea id="message" placeholder="Your message here..."></textarea>
+                                <textarea
+                                    id="message"
+                                    placeholder="Your message here..."
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
+                                ></textarea>
                             </div>
-                            <button type="submit" className="send-btn">
-                                Send Message <Send size={18} />
+                            <button type="submit" className="send-btn" disabled={status.loading}>
+                                {status.loading ? (
+                                    <>
+                                        Sending... <Loader2 className="spinner" size={18} />
+                                    </>
+                                ) : (
+                                    <>
+                                        Send Message <Send size={18} />
+                                    </>
+                                )}
                             </button>
                         </form>
                     </div>
@@ -85,3 +188,4 @@ export default function Contact() {
         </div>
     )
 }
+

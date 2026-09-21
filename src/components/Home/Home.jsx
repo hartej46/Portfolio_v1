@@ -16,7 +16,7 @@ import pytorch from '../../techImg/pytorch.png'
 import express from '../../techImg/express.png'
 import jest from "../../ProjectScreenshot/jest.png"
 
-import Hartejsingh_Sandhu_Resume from    '../../resume/Hartejsingh_Sandhu_Resume.pdf'
+import resume  from  '../../resume/Hartejsingh_Sandhu_Resume.pdf'
 
 export default function Home() {
     const handleClick = () => navigate('../Contacts/Contact.jsx')
@@ -50,7 +50,7 @@ export default function Home() {
                     </div>
                     <h1 className="name">Hartejsingh Sandhu's <br /> <span>Portfolio</span></h1>
                     <div className="info flex gap-1.5">
-                        <button> <a href={Hartejsingh_Sandhu_Resume} download="Hartejsingh_Sandhu_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a> </button>
+                        <button> <a href={ resume } download="Hartejsingh_Sandhu_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a> </button>
                         <Link to="/project">
     <button>Explore My Work</button>
 </Link>

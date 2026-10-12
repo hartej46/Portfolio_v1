@@ -11,10 +11,18 @@ import TechStack from "../ProjectCard/TechStack"
 import mealmaster from '../../ProjectScreenshot/mealmaster.png'
 import nsthelper from '../../ProjectScreenshot/nsthelper.png'
 import resume from '../../ProjectScreenshot/resume.png'
-
+import angelos from '../../ProjectScreenshot/angelos.png'
 
 export default function Project() {
     const ProjectList = [
+        {
+            image: angelos,
+            description: "Whether you're a casual viewer or a hardcore film critic, CultStory provides the perfect platform to dive deep into cinematic discussions. Our goal is to foster a space where diverse opinions are celebrated and where every movie gets its moment in the spotlight. Join our growing community to participate in exclusive polls, share behind-the-scenes theories, and build your own ultimate watchlist with fellow enthusiasts.",
+            teckstack: ["TS", "NPM"],
+            demolink: 'https://www.npmjs.com/package/angelos',
+            githublink: 'https://github.com/hartej46/angelos',
+            title: "angelos"
+        }, 
         {
             image: url_shorner,
             description: "This project is a high-performance URL shortener that transforms long, complex links into clean, compact, and secure aliases using NanoID. It leverages a dual-database architecture—combining MongoDB for reliable storage with Redis Cloud for lightning-fast caching and instant redirects. Fully optimized for serverless environments like Vercel, the backend ensures low latency and robust connection resilience.",

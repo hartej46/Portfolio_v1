@@ -24,17 +24,16 @@ export default function Contact() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        if (!formData.name || !formData.email || !formData.message) {
+
+        if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
             setStatus({ loading: false, success: null, error: 'Please fill in all fields.' })
             return
         }
 
         setStatus({ loading: true, success: null, error: null })
 
-        const apiUrl = import.meta.env.VITE_CONTACT_API_URL || 'http://localhost:5005/api/contact'
-
         try {
-            const response = await fetch(apiUrl, {
+            const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -44,21 +43,21 @@ export default function Contact() {
 
             const data = await response.json()
 
-            if (response.ok && data.success !== false) {
+            if (response.ok && data.success) {
                 setStatus({
                     loading: false,
-                    success: data.message || 'Message sent successfully! I will get back to you soon.',
+                    success: data.message || 'Inquiry sent successfully! I will get back to you soon.',
                     error: null
                 })
                 setFormData({ name: '', email: '', message: '' })
             } else {
-                throw new Error(data.error || data.message || 'Failed to send message. Please try again.')
+                throw new Error(data.error || 'Failed to send inquiry. Please try again.')
             }
         } catch (err) {
             setStatus({
                 loading: false,
                 success: null,
-                error: err.message || 'Network error. Please make sure the backend server is running.'
+                error: err.message || 'Failed to send message. Please verify your SMTP settings.'
             })
         }
     }
@@ -188,4 +187,3 @@ export default function Contact() {
         </div>
     )
 }
-
